@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organify — Fresh Organic Groceries</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS for scroll animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="siteHeader" class="site-header">
+    <nav class="navbar navbar-expand-lg container navbar-light">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.png" alt="Organify logo" class="logo">
+        <div>
+          <div class="brand">Organify</div>
+          <div class="tagline small text-muted">Fresh • Local • Organic</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="ms-3 d-flex gap-2 align-items-center">
+          <button class="btn btn-outline-success btn-sm" id="cartBtn">
+            <i class="bi bi-cart3"></i> Cart <span class="badge bg-success" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h1 class="display-5">Eat Fresh. Live Healthy. Be Organic.</h1>
+          <p class="lead text-muted">Sustainably sourced, hand-picked, and packed with love. Taste the difference.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="shop.html" class="btn btn-lg btn-success">Shop Now</a>
+            <a href="#why" class="btn btn-lg btn-outline-dark">Why Organify</a>
+          </div>
+
+          <div class="trust mt-4 d-flex flex-wrap gap-3 small text-muted">
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot bg-success"></span> Certified Organic
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot bg-secondary"></span> Local Farms
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot bg-warning"></span> Eco Packaging
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <div class="hero-card shadow-sm rounded">
+            <img src="assets/images/img8.jpg" alt="assorted produce" class="img-fluid hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="why" class="py-5 bg-cream">
+    <div class="container">
+      <h2 class="h3 mb-4 text-center" data-aos="fade-up">Shop by category</h2>
+      <div class="row g-3">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="50">
+          <div class="card category shadow-sm">
+            <img src="assets/images/img5.jpg" class="card-img-top" alt="fruits">
+            <div class="card-body">
+              <h5 class="mb-1">Fruits</h5>
+              <p class="small text-muted mb-0">Seasonal and juicy picks.</p>
+              <a href="shop.html?cat=fruits" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="120">
+          <div class="card category shadow-sm">
+            <img src="assets/images/img6.jpg" class="card-img-top" alt="vegetables">
+            <div class="card-body">
+              <h5 class="mb-1">Vegetables</h5>
+              <p class="small text-muted mb-0">Crisp and nutrient-rich.</p>
+              <a href="shop.html?cat=vegetables" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="190">
+          <div class="card category shadow-sm">
+            <img src="assets/images/img2.jpg" class="card-img-top" alt="pantry">
+            <div class="card-body">
+              <h5 class="mb-1">Pantry</h5>
+              <p class="small text-muted mb-0">Grains, spices & staples.</p>
+              <a href="shop.html?cat=pantry" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="h3">Featured picks</h2>
+        <a href="shop.html" class="small">View all products →</a>
+      </div>
+
+      <div class="row" id="featuredProducts" data-aos="fade-up"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h3 class="h4 text-center mb-4" data-aos="fade-up">Why choose Organify?</h3>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="50">
+          <div class="card h-100 p-3 text-center border-0 shadow-sm">
+            <i class="bi bi-leaf display-6 text-success"></i>
+            <h5 class="mt-3">100% Organic</h5>
+            <p class="small text-muted">Certified produce from trusted farms.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="120">
+          <div class="card h-100 p-3 text-center border-0 shadow-sm">
+            <i class="bi bi-truck display-6 text-success"></i>
+            <h5 class="mt-3">Fast Delivery</h5>
+            <p class="small text-muted">Freshness delivered to your doorstep.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="190">
+          <div class="card h-100 p-3 text-center border-0 shadow-sm">
+            <i class="bi bi-box-seam display-6 text-success"></i>
+            <h5 class="mt-3">Eco Packaging</h5>
+            <p class="small text-muted">Sustainable packaging, minimal waste.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-5 bg-cream">
+    <div class="container">
+      <h3 class="h4 text-center mb-4" data-aos="fade-up">What our customers say</h3>
+      <div class="testimonial-slider" id="testimonialSlider" data-aos="fade-up">
+        <!-- JS will inject slides -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-success text-white text-center">
+    <div class="container">
+      <h3>Join our Organic Family Today</h3>
+      <p class="mb-3">Use code <strong>FRESH10</strong> for 10% off your first order.</p>
+      <a href="shop.html" class="btn btn-light btn-lg">Start shopping</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <img src="assets/images/logo.png" alt="Organify" style="width:84px;">
+            <p class="small text-muted mt-2">Organify brings fresh, organic produce from local farms to your table with eco-friendly packaging and care.</p>
+            <div class="mt-3 d-flex gap-2">
+              <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links list-unstyled small">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Customer Care</h6>
+            <ul class="footer-links list-unstyled small">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Terms & Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Contact</h6>
+            <p class="small text-muted mb-1"><i class="bi bi-geo-alt-fill"></i> 123 Organic Ave, Healthy Town</p>
+            <p class="small text-muted mb-1"><i class="bi bi-envelope-fill"></i> support@organify.example</p>
+            <p class="small text-muted"><i class="bi bi-telephone-fill"></i> +1 (555) 123-4567</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom py-3 text-center">
+      <div class="container small text-muted">© <span id="year"></span> Organify. All rights reserved. Designed by Varun.</div>
+    </div>
+  </footer>
+
+  <!-- ADD TO CART POPUP ELEMENT -->
+  <div id="addCartPopup" class="add-cart-popup" aria-hidden="true"></div>
+
+  <!-- CART MODAL -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="cartList"></div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Continue shopping</button>
+          <a href="contact.html" class="btn btn-success">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    // initialize AOS
+    AOS.init({ once: true, duration: 800 });
+  </script>
+</body>
+</html>
